@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+  <title>Dev | 地铁计算器Windows版</title>
+</head>
+
+<body class="mdui-theme-primary-teal mdui-theme-accent-teal mdui-theme-layout-auto mdui-bottom-nav-fixed">
+  <div class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+      <a href="javascript:;" class="mdui-typo-headline">地铁计算器</a>
+      <a href="javascript:;" class="mdui-typo-title">Windows</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+    </div>
+  </div>
+  <div class="mdui-typo background">
+    <h1><span class="span"><i class="text">最</i></span><span class="span"><i class="text">友</i></span><span
+        class="span"><i class="text">好</i></span><span class="span"><i class="text">的</i></span><span class="span"><i
+          class="text">Windows</i></span><span class="span"><i class="text">端</i></span><span class="span"><i
+          class="text">体</i></span><span class="span"><i class="text">验</i></span></h1>
+    <p>地铁计算器，从♥出发</p>
+    <div class="p">
+      <h2 mdui-tooltip="{content: '每3个月更新一次'}">地铁计算器下载</h2>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" disabled>21H1</button>
+      <h3>早期预览版</h3>
+      <p>这里包含了一些最近的更改，通常不稳定（比如随时随地都可能被砍掉）</p>
+      <span mdui-tooltip="{content: '每1个月更新一次'}">Beta</span><br/>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" disabled>2101</button><br />
+      <span mdui-tooltip="{content: '每1周更新一次'}">Dev</span><br/>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple">20210124</button><br />
+      <span mdui-tooltip="{content: '每天更新一次'}">Canary</span><br/>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple">20210124</button>
+    </div>
+  </div>
+  <style>
+    .span {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      top: 0.8rem;
+      animation: .3s up ease-in-out forwards;
+    }
+
+    .text {
+      font-style: normal;
+      position: relative;
+      top: 2.2rem;
+      animation: .5s up ease-in-out forwards;
+    }
+
+    p {
+      top: 0.8rem;
+      opacity: 0;
+      animation: .5s up ease-out forwards, .5s in ease-out forwards;
+      animation-delay: .8s;
+    }
+
+    .p {
+      top: 0.8rem;
+      opacity: 0;
+      animation: .5s up ease-out forwards, .5s in ease-out forwards;
+      animation-delay: 1.3s;
+    }
+
+    @keyframes in {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes up {
+      to {
+        top: 0rem;
+      }
+    }
+
+    span:nth-of-type(1) i {
+      animation-delay: 0s;
+    }
+
+    span:nth-of-type(2) i {
+      animation-delay: .1s;
+    }
+
+    span:nth-of-type(3) i {
+      animation-delay: .2s;
+    }
+
+    span:nth-of-type(4) i {
+      animation-delay: .3s;
+    }
+
+    span:nth-of-type(5) i {
+      animation-delay: .4s;
+    }
+
+    span:nth-of-type(6) i {
+      animation-delay: .5s;
+    }
+
+    span:nth-of-type(7) i {
+      animation-delay: .6s;
+    }
+
+    span:nth-of-type(8) i {
+      animation-delay: .7s;
+    }
+
+    span:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    span:nth-of-type(2) {
+      animation-delay: .1s;
+    }
+
+    span:nth-of-type(3) {
+      animation-delay: .2s;
+    }
+
+    span:nth-of-type(4) {
+      animation-delay: .3s;
+    }
+
+    span:nth-of-type(5) {
+      animation-delay: .4s;
+    }
+
+    span:nth-of-type(6) {
+      animation-delay: .5s;
+    }
+
+    span:nth-of-type(7) {
+      animation-delay: .6s;
+    }
+
+    span:nth-of-type(8) {
+      animation-delay: .7s;
+    }
+  </style>
+  <!-- MDUI JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
